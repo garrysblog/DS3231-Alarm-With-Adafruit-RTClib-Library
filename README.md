@@ -1,12 +1,12 @@
 # Using the DS3231 alarm with the Adafruit RTClib library
 
-The DS3231 Real Time Clock module includes two alarms. Support for these was added to the Adafruit RTClib. The examples here
+The DS3231 Real Time Clock module includes two alarms. Support for these was added to the Adafruit RTClib. The examples here cover using the alarm.
 
  - Setting an alarm and polling the SQW pin to monitor its status (DS3231-RTClib-Adafruit-Alarm-Poll-SQW.ino)
  - Setting an alarm and polling using alarmFired (DS3231-RTClib-Adafruit-Alarm-Poll-alarmFired.ino)
  - Sending the Arduino to sleep and waking it using the alarm and SQW pin (DS3231-_RTClib-Adafruit-Alarm-Sleep.ino)
 
-More details are available on my blog https://garrysblog.com
+More details are available on my blog https://garrysblog.com/2020/07/05/using-the-ds3231-real-time-clock-alarm-with-the-adafruit-rtclib-library/
 
 ## Setting the alarm
 **setAlarm1(DateTime, alarm_mode)**
