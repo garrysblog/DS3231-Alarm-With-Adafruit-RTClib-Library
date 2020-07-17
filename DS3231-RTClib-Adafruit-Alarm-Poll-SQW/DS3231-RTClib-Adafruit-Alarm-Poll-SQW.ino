@@ -31,6 +31,12 @@ void setup () {
   Serial.begin(9600); // Start serial port for monitoring
 
   pinMode(alarmPin, INPUT_PULLUP); // Set alarm pin as pullup
+  
+  if (! rtc.begin()) {
+    Serial.println("Couldn't find RTC");
+    Serial.flush();
+    abort();
+  }
 
   // If required set to to compile time
   //rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
