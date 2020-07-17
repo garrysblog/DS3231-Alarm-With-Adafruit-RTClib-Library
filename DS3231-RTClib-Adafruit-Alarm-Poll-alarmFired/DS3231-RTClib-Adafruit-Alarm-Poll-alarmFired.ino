@@ -29,6 +29,12 @@ RTC_DS3231 rtc;
 
 void setup () {
   Serial.begin(9600); // Start serial port for monitoring
+  
+  if (! rtc.begin()) {
+    Serial.println("Couldn't find RTC");
+    Serial.flush();
+    abort();
+  }
 
   // If required set time
   //rtc.adjust(DateTime(F(__DATE__), F(__TIME__))); // To compiled time
