@@ -38,4 +38,5 @@ In this example the alarm will trigger when seconds, minutes and hours match, re
 The current time needs to be called before setting the remaining examples as it is needed to calculate the end time. These examples set the alarm to 10 seconds from the current time.
 
 **setAlarm1(now + TimeSpan(0, 0, 0, 10), DS3231_A1_Second)**
+
 **setAlarm1(now.unixtime() + 10, DS3231_A1_Second)**
