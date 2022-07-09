@@ -10,6 +10,7 @@ More details are available on my blog https://garrysblog.com/2020/07/05/using-th
 
 ## Setting the alarm
 **setAlarm1(DateTime, alarm_mode)**
+
 **setAlarm2(DateTime, alarm_mode)**
 
 ## Alarm modes  
