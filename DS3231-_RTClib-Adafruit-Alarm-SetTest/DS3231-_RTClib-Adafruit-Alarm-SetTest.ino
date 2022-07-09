@@ -55,10 +55,14 @@ void setup() {
 
     // schedule an alarm
     if(!rtc.setAlarm1(
-            //rtc.now() + TimeSpan(10),
-            //DS3231_A1_Second // this mode triggers the alarm when the seconds match. See Doxygen for other options
+            // Time relative to now
+            //rtc.now() + TimeSpan(10), DS3231_A1_Second // this mode triggers the alarm when the seconds match. See Doxygen for other options
+            rtc.now() + TimeSpan(0, 0, 1, 0), DS3231_A1_Minute  // In 1 minutes time from now
+            //rtc.now() + TimeSpan(0, 0, 2, 10), DS3231_A1_Minute // In 2 minutes and 10 seconds time from now
+            //rtc.now() + TimeSpan(0, 1, 1, 0), DS3231_A1_Hour    // In 1 hour and 1 m,inutes time from now
 
-            DateTime(0, 0, 0, 0, 0, 0), DS3231_A1_Second  // When seconds at zero, that is every minute
+            // At explicit times
+            //DateTime(0, 0, 0, 0, 0, 0), DS3231_A1_Second  // When seconds at zero, that is every minute
             //DateTime(0, 0, 0, 0, 0, 0), DS3231_A1_Minute  // When the minutes and seconds are at zero, that is, every hour
             //DateTime(0, 0, 0, 0, 1, 10), DS3231_A1_Minute // When the minutes are at 1 and seconds are at 10, that is 1 minute and 10 seconds past the hour
             //DateTime(0, 0, 0, 10, 0, 0), DS3231_A1_Hour   // At 10:00 o'clock every day
