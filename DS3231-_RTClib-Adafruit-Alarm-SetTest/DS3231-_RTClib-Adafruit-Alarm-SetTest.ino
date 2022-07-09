@@ -59,7 +59,7 @@ void setup() {
             //rtc.now() + TimeSpan(10), DS3231_A1_Second // this mode triggers the alarm when the seconds match. See Doxygen for other options
             rtc.now() + TimeSpan(0, 0, 1, 0), DS3231_A1_Minute  // In 1 minutes time from now
             //rtc.now() + TimeSpan(0, 0, 2, 10), DS3231_A1_Minute // In 2 minutes and 10 seconds time from now
-            //rtc.now() + TimeSpan(0, 1, 1, 0), DS3231_A1_Hour    // In 1 hour and 1 m,inutes time from now
+            //rtc.now() + TimeSpan(0, 1, 1, 0), DS3231_A1_Hour    // In 1 hour and 1 minutes time from now
 
             // At explicit times
             //DateTime(0, 0, 0, 0, 0, 0), DS3231_A1_Second  // When seconds at zero, that is every minute
