@@ -71,7 +71,7 @@ void setup() {
         Serial.println("Error, alarm wasn't set!");
     }else {
         Serial.print("Current time: ");
-        char date[10] = "hh:mm:ss";
+        char date[] = "DDD, DD MMM YYYY hh:mm:ss";
         rtc.now().toString(date);
         Serial.println(date);
     }
